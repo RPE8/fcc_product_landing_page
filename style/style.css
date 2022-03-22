@@ -16,3 +16,59 @@ html, body {
     width: 120px;
     height: 50px;
 }
+
+#nav-menu {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-link {
+    flex-basis: 150px;
+}
+
+#content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+#description-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.description-row-icon {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+#footer {
+    background-color: peachpuff;
+}
+
+#footer > section {
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+#footer-menu {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
