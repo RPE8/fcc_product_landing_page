@@ -41,10 +41,9 @@ html, body {
     color: #E9E5D6;
 }
 
-.header-link {
+.nav-link {
     text-decoration: none;
 }
-
 
 #logo-link {
     padding: 10px 40px;
@@ -109,27 +108,45 @@ html, body {
     margin-bottom: unset;
 }
 
-#description-article {
+#description-section {
     color: #E9E5D6;
     display: flex;
-    flex-flow: row;
+    align-self: stretch;
+    flex-flow: row wrap;
 }
 
 .description-item {
+    display: flex; 
+    flex-direction: column;
+    margin: 5px;
+    flex-basis: 350px;
+    flex-grow: 1;
+    border: 3px solid rgba(172, 185, 146, 1);
+}
+
+.description-item > div {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.description-item > div > h3{
+    margin-left: 20px;
 }
 
 #description-item-one {
-    height: 300px;
+    min-height: 350px;
     background-image: linear-gradient(180deg, rgba(163, 210, 214, 0.2), #6fadaa 90%), url("../images/description1.jpg");
 }
 
 #description-item-two {
+    min-height: 350px;
     background-image: linear-gradient(180deg, rgba(163, 210, 214, 0.2), #6fadaa 90%), url("../images/description2.jpg");
 }
 
 #description-item-three {
+    min-height: 350px;
     background-image: linear-gradient(180deg, rgba(163, 210, 214, 0.2), #6fadaa 90%), url("../images/description3.jpg");
 }
 
@@ -139,31 +156,35 @@ html, body {
     border-radius: 50%;
     width: 35px;
     height: 35px;
-    display: inline-block;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-
-#footer {
-    /* flex-grow: 2; */
-    /* height: 90px; */
-    background-color: peachpuff;
-}
-
-#footer > section {
-    width: 240px;
-    padding: 5px;
-    margin-top: auto;
-    margin-left: auto; 
-    margin-right: 20px;
-}
-
-#footer-menu {
-    width: 200px;
+#invite-section {
     display: flex;
-    flex-direction: row;
+    width: 100%;
     justify-content: space-between;
+    border: 3px solid rgba(172, 185, 146, 1);
+    background-color: rgba(233, 229, 214, 0.6);
+    margin-bottom: 70px;
+}
+
+#invite-section > div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#invite-section > div > h3 {
+    color: #E9E5D6;
+    letter-spacing: 4px;
+    margin-top: -75px;
+    font-size: 60px;
+    font-weight: 1000;
+    text-shadow: 0 0 5px #464E2E
+}
+
+#invite-section > iframe {
+    height: 400px;
+    width: 600px;
 }
