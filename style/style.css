@@ -3,14 +3,27 @@ html, body {
     width: 100%;
     margin: unset;
     padding: unset;
+    background-image: url("../images/bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 #header {
     width: 100%;
+    position: sticky;
+    top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 
 #header-img {
     width: 120px;
@@ -26,17 +39,27 @@ html, body {
 
 .nav-link {
     flex-basis: 150px;
+    height: 100%;
 }
 
 #content {
-    margin: 0 auto;
+    height: 100%;
     width: 100%;
-    max-width: 1000px;
-    /* display: flex;
-    flex-direction: column; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 2; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    height: calc(100vh - 50px);
+    /* min-height: calc(100% - 50px); */
 }
 
 #description-article {
+    
     display: flex;
     flex-direction: column;
 }
@@ -58,12 +81,17 @@ html, body {
 
 
 #footer {
+    /* flex-grow: 2; */
+    /* height: 90px; */
     background-color: peachpuff;
 }
 
 #footer > section {
+    width: 240px;
+    padding: 5px;
+    margin-top: auto;
     margin-left: auto; 
-    margin-right: 0;
+    margin-right: 20px;
 }
 
 #footer-menu {
