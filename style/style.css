@@ -22,10 +22,10 @@ html, body {
 }
 
 #header {
-    /* background-color: rgba(70, 78, 46, 0.1); */
     max-height: 75px;
     width: 100%;
-    position: sticky;
+    width: calc(100% - 15px);
+    position: fixed;
     top: 0px;
     display: flex;
     flex-direction: row;
@@ -73,7 +73,6 @@ html, body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    /* flex-grow: 2; */
     justify-content: space-between;
     align-items: center;
 }
@@ -83,7 +82,6 @@ html, body {
     flex-direction: column;
     justify-content: center;
     height: calc(100vh - 50px);
-    /* min-height: calc(100% - 50px); */
 }
 
 #title > h1 {
@@ -224,6 +222,10 @@ html, body {
         font-weight: 100;
     }
 
+    #header {
+        width: calc(100% - 10px);
+    }
+
 }
 
 @media (max-width: 735px) {
@@ -255,5 +257,9 @@ html, body {
 
     .nav-item{
         display: none;
+    }
+
+    #header {
+        width: calc(100% - 8px);
     }
 }
